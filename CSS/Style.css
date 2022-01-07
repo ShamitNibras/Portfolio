@@ -1,0 +1,282 @@
+@import 'utilites.css';
+:root{
+    --primary:#3DCFD3;
+    --dark:#161616;
+    --pure:#FFFFFF;
+    --ternary:#898989;
+    --light:#F2F2F2;
+    --secondary:#070606;
+}
+body{
+    font-family: 'Garamond';
+}
+html{
+    scroll-behavior: smooth;
+}
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    -webkit-font-smoothing:antialiased;
+}
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 70% 87%, 0 100%);
+}
+.container{
+    max-width: 1152px;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+
+
+header nav .left a{
+    color: var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+    text-transform: uppercase;
+   transition: all .3s ease;
+}
+header nav .left a:hover{
+    color: var(--primary);
+}
+header nav{
+    padding: 2rem 0;
+}
+header nav .branding{
+     margin-right: 5rem;
+}
+.hero{
+    padding: 5rem 0;
+}
+.hero .left img{
+    width: 350px;
+}
+.hero .right{
+    color: var(--pure);
+}
+.hero .right h3{
+    font-size: 1.6rem;
+    color: var(--primary);
+    margin-bottom: 0.5rem;
+}
+.hero .right h1{
+    font-size: 3rem;
+    font-weight: 80;
+    line-height: 1.5;                                                                                                                    
+    margin-bottom: 2rem;
+}
+.hero .right h1 span{
+    color: var(--primary);
+}
+ p{
+
+    line-height: 1.5;                                                                                                                    
+    margin-bottom: 2rem;
+}
+.hero .right{
+    margin-top: -5rem ;;
+}
+
+section{
+    padding: 4rem 0;
+    font-family: 'Nanum Myeongjo','Times New Roman', Times, serif;
+}
+
+section.about .about-me-img{
+    height: 200px;
+    
+}
+section.about h1{
+    margin-bottom: 1rem;
+    font-size: 1.6rem;
+    font-weight: 400;
+}
+section.about h1 span{
+    color: var(--primary);
+}
+section.about h3,h2{
+    font-size: 1rem;
+    margin-bottom: 1rem;
+    font-weight: 400;
+}
+section.about h2{
+    color: #050b5c;
+    font-size: 2rem;
+    font-weight: 400;
+   
+}
+.section-heading{
+    color: var(--secondary);
+    text-align: center;
+    margin-bottom: 5rem;
+    line-height: 1.5;
+    margin-top: -2rem;
+}
+.section-heading + p{
+    color: var(--ternary);
+    font-family: 'Times New Roman', Times, serif;
+    margin-bottom: 6rem;
+    text-align: center;
+
+}
+section.Edu{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)),url(../images/edu.jpg);
+    color: darkkhaki;
+   font-size: 2.5rem;
+}
+section.edu .card-wrapper{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+}
+section.edu .card-wrapper .card{
+    background: rgb(197, 165, 240);
+    padding: 3rem 2rem;
+     transition: all .3s ease;
+}
+section.edu .card-wrapper .card h1{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0.3rem;
+
+}
+section.edu .card-wrapper .card h2{
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+
+}
+section.edu .card-wrapper .card h4{
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+
+}
+section.edu .card-wrapper .card:hover{
+    background: darkviolet;
+}
+section.edu .card-wrapper .card:hover h2,section.edu .card-wrapper .card:hover h4,section.edu .card-wrapper .card:hover h1{
+    color: cornsilk;
+}
+section.Project{
+    background: rgb(183, 204, 189);
+    
+}
+section.Project .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-column-gap: 3rem;
+    grid-row-gap: 4rem;
+}
+section.Project .card-wrapper .card{
+    background: wheat;
+    padding: 3rem 2rem;
+    padding-top: 6rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease;
+}
+section.Project .card-wrapper .card img{
+    position: absolute;
+    top: -1.5rem;
+    left: 50%;
+    transform: translateX(-50%);
+}
+section.Project .card-wrapper .card h2{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+
+}
+section.Project .card-wrapper .card h5{
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+
+}
+section.Project .card-wrapper .card:hover{
+    background: coral;
+}
+section.Project .card-wrapper .card:hover h2,section.Project .card-wrapper .card:hover h5,section.Project .card-wrapper .card:hover p{
+    color: cornsilk;
+}
+section.pub{
+    text-align: center;
+    background: linear-gradient(rgba(0,0,0,0.1),rgba(0,0,0,0.9)),url(../images/pub.jpg);
+    color: darkkhaki;
+   font-size: 2.5rem;
+   margin-top: 1.5rem;
+}
+section.Pub .card-wrapper{
+    display: grid;
+    grid-template-rows: repeat(3, 1fr);
+    grid-row-gap: 3rem;
+}
+section.Pub .card-wrapper .card{
+    background: rgb(104, 131, 190);
+    padding: 3rem 2rem;
+     transition: all .3s ease;
+}
+section.Pub .card-wrapper .card h1{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0.3rem;
+    line-height: 2rem;
+
+}
+section.Pub .card-wrapper .card h3{
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    line-height: 2rem;
+
+}
+section.Pub .card-wrapper .card a{
+    margin-top: 0.5rem;
+    margin-bottom: 0.3rem;
+    text-decoration: none;
+    line-height: 2rem;
+
+}
+section.Pub .card-wrapper .card:hover{
+    background: rgb(32, 58, 116);
+}
+section.Pub .card-wrapper .card:hover h1,section.Pub .card-wrapper .card:hover h3,section.Pub .card-wrapper .card:hover a{
+    color: cornsilk;
+}
+section.Contact{
+    background: rgb(219, 238, 238);
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+}
+section.Contact .card-wrapper{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 3rem;
+}
+section.Contact .card-wrapper .card{
+    background: rgb(201, 193, 179);
+    padding: 3rem 2rem;
+    padding-top: 3rem;
+    position: relative;
+    text-align: center;
+    transition: all .3s ease;
+    border-radius: 40%;
+}
+
+section.Contact .card-wrapper .card h1{
+    font-weight: bolder;
+    font-size: 1.8rem;
+    margin-top: -1rem;
+    margin-bottom: 0.5rem;
+
+}
+section.Contact .card-wrapper .card h3{
+    margin-top: 0.9rem;
+    margin-bottom: 0.9rem;
+
+}
+
+
