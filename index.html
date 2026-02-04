@@ -31,23 +31,39 @@
                 </div>
                 
             </nav>
-            <div class="hero flex items-center justify-between">
-                <div class="left flex-1 flex justify-center">
-                    <img src="./images/2.jpg" alt="">
-                </div>
-                <div class="right flex-1">
-                    <h3>Shamit Nibras</h3>
-                    <h1>I'm a <span>Software Engineer</span></h1>
-                    <p>As concerns to my weaknesses and strengths, my abilities are that I am self-motivated, responsible, 
-                        a quick learner, and capable of functioning under pressure. With my impressive communication skills 
-                        and interpersonal abilities, I am also capable of inspiring. I have a positive attitude, am capable 
-                        of multitasking, and am dedicated to my work.</p>
-                    <div>
-                        <button class="btn btn-primary">Download CV</button>
-                    </div>
-                </div>
+             {/* HERO – Signature Identity */}
+      <section className="relative z-10 max-w-7xl mx-auto px-6 py-28 grid lg:grid-cols-2 gap-16 items-center">
+        {/* Professional Picture beside HERO */}
+        <div className="hero flex items-center justify-between">
+          <div className="left flex-1 flex justify-center">
+            <img src="./images/2.jpg" alt="Professional Shamit Nibras" />
+          </div>
+          <div className="right flex-1">
+            <h1 className="text-6xl font-bold tracking-tight text-justify">
+              SHAMIT NIBRAS
+              <br />
+              <br />
+            </h1>
+
+            <h2 className="text-4xl font-semibold text-justify">
+              I'm a <span className="text-indigo-600">Network</span> Engineer
+            </h2>
+
+            <p className="mt-8 text-xl text-slate-400 leading-relaxed text-justify">
+              Experience in managing and troubleshooting complex technical environments, ensuring optimal system performance and client satisfaction. Skilled in network configuration, hardware support, and software management, delivering reliable solutions in fast-paced settings. Strong problem-solving and communication skills enable effective collaboration and end-user training. Dedicated to continuous learning and adapting to emerging technologies to drive operational efficiency and organizational success.
+            </p>
+
+            <div className="mt-10 flex gap-5">
+              <Button className="rounded-2xl px-8 py-6 text-lg">View Case Studies</Button>
+              <Button className="rounded-2xl px-8 py-6 text-lg">Contact</Button>
+              <Button className="rounded-2xl px-8 py-6 text-lg">
+                <Download size={18} /> Download CV
+              </Button>
             </div>
+          </div>
         </div>
+      </section>
+
         </header>
         <section id="About" class="about">
             <div class="container flex items-center">
